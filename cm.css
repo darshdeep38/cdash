@@ -1,0 +1,335 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+
+
+.collection-table th,
+.collection-table td {
+    white-space: normal !important;
+    word-break: break-word;
+    vertical-align: middle;
+    text-align: center;
+    padding: 6px 8px;
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+.search-wrapper{
+    display:flex;
+    align-items:center;
+    gap:5px;
+}
+.search-input{
+    width:200px;
+}
+
+
+th {
+    position: relative;
+    user-select: none;
+}
+
+.resize-handle {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 5px;
+    height: 100%;
+    cursor: col-resize;
+    background-color: transparent;
+    z-index: 1;
+}
+
+.resize-handle:hover,
+.resize-handle.active {
+    background-color: #0176d3;
+}
+
+.refresh-btn{
+    height:14px;
+}
+.filter-btn{
+   height:15px;
+}
+
+.collection-table th {
+    background-color: #f4f6f9;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.booking-cell {
+    text-align: left !important;
+    white-space: nowrap !important;
+}
+/* FIX DROPDOWN OVERLAY AREA */
+
+.slds-dropdown {
+    background: #ffffff !important;
+    border: 1px solid #d8dde6 !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15) !important;
+}
+
+/* dropdown container */
+.slds-dropdown_fluid {
+    background: #ffffff !important;
+}
+
+/* dropdown scroll area */
+.slds-listbox {
+    background: #ffffff !important;
+    max-height: 250px;
+}
+
+/* each option */
+.slds-listbox__item {
+    background: #ffffff !important;
+}
+
+/* remove parent blue area visibility */
+.table-container {
+    background: #ffffff !important;
+}
+
+/* expanded section wrapper */
+.slds-p-around_small,
+.slds-p-around_x-small {
+    background: #ffffff !important;
+}
+.star {
+    font-size: 18px;
+    color: #c9c9c9;       /* empty star — grey                   */
+    cursor: default;
+    line-height: 1;
+    display: inline-block;
+    padding: 0 1px;
+    transition: color 0.15s ease;
+}
+
+.history-tooltip {
+    position: absolute;
+    background: white;
+    border: 1px solid #d8dde6;
+    padding: 10px;
+    min-width: 350px;
+    max-width: 450px;
+    z-index: 9999;
+    box-shadow: 0 4px 12px rgba(0,0,0,.2);
+}
+
+.history-date {
+    font-size: 11px;
+    color: #666;
+    margin-top: 2px;
+}
+
+.history-row {
+    padding: 6px;
+    border-bottom: 1px solid #eee;
+}
+
+ 
+.star.filled {
+    color: #f4c430;       /* filled star — gold                  */
+}
+/* Left align combobox value */
+
+.CollectCombobox.slds-input_faux,
+.CollectCombobox.slds-combobox__input {
+    text-align: left !important;
+}
+
+.filter-container {
+    position: relative;
+    display: inline-block;
+    overflow: visible !important;
+}
+
+.filter-popup {
+    position: absolute;
+    top: 35px;
+    right: 0;
+
+    width: 500px;
+    max-width: 90vw;
+    max-height: 600px;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    background: #ffffff;
+    border: 1px solid #d8dde6;
+    border-radius: 6px;
+    padding: 12px;
+
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+
+    z-index: 999999;
+}
+
+/* ===== FILTER POPUP FIX ===== */
+
+.search-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    overflow: visible !important;
+}
+
+.slds-page-header,
+.slds-page-header__row,
+.slds-page-header__col-title {
+    overflow: visible !important;
+}
+
+.collection-table {
+    overflow: visible !important;
+}
+
+.collection-table td {
+    overflow: visible !important;
+}
+
+.collection-table tr {
+    overflow: visible !important;
+}
+
+.table-container {
+    overflow-x: auto;
+    overflow-y: auto !important;
+    flex: 1 1 auto;
+    min-height: 0;
+}
+
+.slds-scrollable_x {
+    overflow-y: visible !important;
+}
+
+.slds-scrollable_y {
+    overflow: visible !important;
+}
+
+.slds-page-header_record-home {
+    flex: 0 0 auto;
+}
+
+div.slds-m-top_medium.slds-m-bottom_medium.slds-text-align_right {
+    flex: 0 0 auto;
+}
+
+/* ============================================================
+   Interest Summary Cards — nestedCases LWC
+   ============================================================ */
+
+.interest-summary-bar {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 0;
+    background: #FFFFFF;
+    border: 1px solid #DDDBDA;
+    border-bottom: none;
+    border-radius: 6px 6px 0 0;
+    overflow: hidden;
+}
+
+.interest-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 14px 18px;
+    border-right: 1px solid #DDDBDA;
+    position: relative;
+    transition: filter 0.15s;
+    cursor: default;
+}
+
+.interest-card:last-child {
+    border-right: none;
+}
+
+.interest-card:hover {
+    filter: brightness(0.97);
+}
+
+/* Left accent stripe */
+.interest-card::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+}
+
+/* ── Card variants ── */
+
+.interest-card--total {
+    background: #EEF4FF;
+}
+.interest-card--total::before {
+    background: #4A7FC1;
+}
+.interest-card--total .interest-count {
+    color: #4A7FC1;
+}
+
+.interest-card--outstanding {
+    background: #FFF3E0;
+}
+.interest-card--outstanding::before {
+    background: #E8A000;
+}
+.interest-card--outstanding .interest-count {
+    color: #E8A000;
+}
+
+.interest-card--collected {
+    background: #F0EDFF;
+}
+.interest-card--collected::before {
+    background: #7B5EA7;
+}
+.interest-card--collected .interest-count {
+    color: #7B5EA7;
+}
+
+.interest-card--waived {
+    background: #E6FBF4;
+}
+.interest-card--waived::before {
+    background: #0D8A6A;
+}
+.interest-card--waived .interest-count {
+    color: #0D8A6A;
+}
+
+.interest-card--slabs {
+    background: #FFF0F0;
+}
+.interest-card--slabs::before {
+    background: #C94B4B;
+}
+.interest-card--slabs .interest-count {
+    color: #C94B4B;
+}
+
+/* ── Count number ── */
+.interest-count {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.1;
+    margin-bottom: 4px;
+}
+
+/* ── Label ── */
+.interest-label {
+    font-size: 12px;
+    font-weight: 400;
+    color: #706E6B;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
