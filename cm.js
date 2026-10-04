@@ -596,7 +596,6 @@ handlePartialPaymentMouseOver(event) {
     const tooltipLeft = Math.max(0, iconRect.left - 180);
 
 
-    //const tooltipStyle = `position:fixed; z-index:9999; top:${tooltipTop}px; left:${tooltipLeft}px; background:#fff; border:1px solid #dddbda; border-radius:4px; padding:8px; min-width:220px; max-width:320px; box-shadow:0 4px 12px rgba(0,0,0,0.25); font-size:12px;`;
 
     getPartialPaymentHistory({ milestoneId })
         .then(result => {
