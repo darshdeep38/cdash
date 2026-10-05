@@ -2586,22 +2586,7 @@ for (const row of this.visibleRows) {
             if (!bookingRow.demandRows || bookingRow.demandRows.length === 0) return;
             bookingRow.demandRows.forEach(demand => {
                 if (!this.dirtyMilestoneIds.has(demand.Id)) return;
-                /*
-                milestoneUpdates.push({
-                    milestoneId: demand.Id,
-                    billedUnbilled: demand.BilledUnbilled || null,
-                    projectedDateOfPayment: demand.ProjectedPaymentDate
-                        ? String(demand.ProjectedPaymentDate) : null,
-                    tdsApplicable: demand.TDSApplicable || null,
-                    tdsAmount: demand.TDS1Percent != null && demand.TDS1Percent !== ''
-                        ? Number(demand.TDS1Percent) : null,
-                    discountApplied: demand.DiscountApplied || null,
-                    discountAmount: demand.DiscountCalculatedValue != null && demand.DiscountCalculatedValue !== ''
-                        ? Number(demand.DiscountCalculatedValue) : null,
-                    partialPaymentAmount: demand.PartialPaymentAmount != null && demand.PartialPaymentAmount !== ''
-                        ? Number(demand.PartialPaymentAmount) : null
-                });
-                */
+               
 
                 milestoneUpdates.push({
                 milestoneId: demand.Id,
